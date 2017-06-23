@@ -1,0 +1,7 @@
+#Fri Jun 23 13:22:40 CEST 2017
+base.0=/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_89a2e8724ffe1a01695bca2e38866b91ab11d94a
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_65c880a4bb8c3947f0dff5905aebf4599fd75583/classes.dex
+base.1=/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_65c880a4bb8c3947f0dff5905aebf4599fd75583
+file.0=/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_89a2e8724ffe1a01695bca2e38866b91ab11d94a/classes.dex

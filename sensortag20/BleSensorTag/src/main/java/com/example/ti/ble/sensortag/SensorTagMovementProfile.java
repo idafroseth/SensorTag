@@ -100,6 +100,7 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
 		
 		row.gyroValue.setText("X:0.00'/s, Y:0.00'/s, Z:0.00'/s");
 		row.magValue.setText("X:0.00mT, Y:0.00mT, Z:0.00mT");
+
         row.WOS.setChecked(true);
         row.WOS.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override

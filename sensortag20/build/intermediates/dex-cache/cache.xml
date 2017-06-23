@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Zelus/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_894c712d89c902c22534e7d1d78131732d83065b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_65c880a4bb8c3947f0dff5905aebf4599fd75583/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="2557d587ecdb22e81e0ef8f23593c2dd8ba54fe7">
+        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_89a2e8724ffe1a01695bca2e38866b91ab11d94a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/libs/org.eclipse.paho.android.service-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b8420e57139cc627a55be0c17b6687e92d7460f">
+        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/2/org.eclipse.paho.android.service-1.0.2_952e246b9a86fcfeecaf97bf5e9284391e1ebc3f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/libs/org.eclipse.paho.client.mqttv3-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="02e433eb0fda11fe7170cf8214ba2f4d165c29b6">
+        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/2/org.eclipse.paho.client.mqttv3-1.0.2_a7cef27c4399cf839b1c5f8d671a990502cfa8c6/classes.dex" />
+    </item>
+
+</items>
