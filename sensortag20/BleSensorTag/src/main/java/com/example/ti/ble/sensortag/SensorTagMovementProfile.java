@@ -71,30 +71,32 @@ import com.example.ti.ble.common.GenericBluetoothProfile;
 import com.example.ti.util.Point3D;
 
 public class SensorTagMovementProfile extends GenericBluetoothProfile {
-	
-	public SensorTagMovementProfile(Context con,BluetoothDevice device,BluetoothGattService service,BluetoothLeService controller) {
+
+	private static final String TAG = "MotionSensor";
+
+	public SensorTagMovementProfile(Context con, BluetoothDevice device, BluetoothGattService service, BluetoothLeService controller) {
 		super(con,device,service,controller);
 		this.tRow =  new SensorTagMovementTableRow(con);
 		
 		List<BluetoothGattCharacteristic> characteristics = this.mBTService.getCharacteristics();
 		
-		for (BluetoothGattCharacteristic c : characteristics) {
-			if (c.getUuid().toString().equals(SensorTagGatt.UUID_MOV_DATA.toString())) {
-				this.dataC = c;
+		for (BluetoothGattCharacteristic characteristic : characteristics) {
+			if (characteristic.getUuid().toString().equals(SensorTagGatt.UUID_MOV_DATA.toString())) {
+				this.dataC = characteristic;
 			}
-			if (c.getUuid().toString().equals(SensorTagGatt.UUID_MOV_CONF.toString())) {
-				this.configC = c;
+			if (characteristic.getUuid().toString().equals(SensorTagGatt.UUID_MOV_CONF.toString())) {
+				this.configC = characteristic;
 			}
-			if (c.getUuid().toString().equals(SensorTagGatt.UUID_MOV_PERI.toString())) {
-				this.periodC = c;
+			if (characteristic.getUuid().toString().equals(SensorTagGatt.UUID_MOV_PERI.toString())) {
+				this.periodC = characteristic;
 			}
 		}
 		
 		
 		this.tRow.setIcon(this.getIconPrefix(), this.dataC.getUuid().toString());
-		
 		this.tRow.title.setText(GattInfo.uuidToName(UUID.fromString(this.dataC.getUuid().toString())));
 		this.tRow.uuidLabel.setText(this.dataC.getUuid().toString());
+
 		this.tRow.value.setText("X:0.00G, Y:0.00G, Z:0.00G");
 		SensorTagMovementTableRow row = (SensorTagMovementTableRow)this.tRow;
 		
@@ -165,9 +167,10 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
 		
 	}
 	@Override
-    public void didUpdateValueForCharacteristic(BluetoothGattCharacteristic c) {
-        byte[] value = c.getValue();
-			if (c.equals(this.dataC)){
+    public void didUpdateValueForCharacteristic(BluetoothGattCharacteristic btGattCharacteristic) {
+        byte[] value = btGattCharacteristic.getValue();
+		Log.d(TAG, "");
+			if (btGattCharacteristic.equals(this.dataC)){
 				Point3D v;
 				v = Sensor.MOVEMENT_ACC.convert(value);
 				if (this.tRow.config == false) this.tRow.value.setText(Html.fromHtml(String.format("<font color=#FF0000>X:%.2fG</font>, <font color=#00967D>Y:%.2fG</font>, <font color=#00000>Z:%.2fG</font>", v.x, v.y, v.z)));

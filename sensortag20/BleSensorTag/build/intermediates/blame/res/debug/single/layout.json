@@ -1,31 +1,7 @@
 [
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/dialog_license.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/dialog_license.xml"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/oad_dialog.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/oad_dialog.xml"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/activity_fwupdate.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/activity_fwupdate.xml"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/activity_file.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/activity_file.xml"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/fragment_help.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/fragment_help.xml"
-    },
-    {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/element_device.xml",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/element_device.xml"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/dialog_about.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/dialog_about.xml"
     },
     {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/frame_progress.xml",
@@ -40,10 +16,6 @@
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/lamp_control.xml"
     },
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/cloud_config_dialog.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/cloud_config_dialog.xml"
-    },
-    {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/generic_services_browser.xml",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/generic_services_browser.xml"
     },
@@ -52,15 +24,7 @@
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/fragment_scan.xml"
     },
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/element_file.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/element_file.xml"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/fw_selector.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/fw_selector.xml"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/element_characteristic.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/element_characteristic.xml"
+        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/layout/main_view.xml",
+        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/layout/main_view.xml"
     }
 ]

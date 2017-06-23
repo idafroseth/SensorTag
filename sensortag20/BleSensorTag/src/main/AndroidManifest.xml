@@ -38,7 +38,6 @@
             android:screenOrientation="unspecified" android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
@@ -49,30 +48,11 @@
             android:configChanges="orientation|screenSize|keyboardHidden" 
             android:screenOrientation="unspecified" />
         <activity
-            android:name="com.example.ti.ble.sensortag.FwUpdateActivity"
-            android:parentActivityName="DeviceActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden" 
-            android:screenOrientation="unspecified"/>
-        <activity
-            android:name="com.example.ti.ble.sensortag.FwUpdateActivity_CC26xx"
-            android:parentActivityName="DeviceActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="unspecified"/>
-        <activity
-            android:name="com.example.ti.ble.sensortag.FileActivity"
-            android:parentActivityName="FwUpdateActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden" 
-            android:screenOrientation="unspecified" />
-        <activity
             android:name="com.example.ti.ble.sensortag.PreferencesActivity"
             android:parentActivityName="DeviceActivity"
             android:screenOrientation="unspecified"
             android:configChanges="orientation|screenSize|keyboardHidden" 
             android:label="Preferences"/>
-        <activity android:name="com.example.ti.ble.sensortag.fwSelectorView"
-            android:parentActivityName="FwUpdateActivity_CC26xx"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:screenOrientation="unspecified"/>
         
     </application>
 

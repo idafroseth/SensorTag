@@ -1,22 +1,10 @@
 [
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml/list_gradient.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/xml/list_gradient.xml"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml/firmware_list.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/xml/firmware_list.xml"
-    },
-    {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml/gatt_uuid.xml",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/xml/gatt_uuid.xml"
     },
     {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml/preferences.xml",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/xml/preferences.xml"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/xml/popup.xml",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/xml/popup.xml"
     }
 ]

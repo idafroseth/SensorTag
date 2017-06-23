@@ -1,4 +1,4 @@
-#Fri Jun 23 20:12:44 CEST 2017
+#Fri Jun 23 22:22:58 CEST 2017
 base.0=/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4
 renamed.0=classes.dex
 file.0=/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/5/slice_4/classes.dex

@@ -1,4 +1,4 @@
-#Fri Jun 23 13:22:40 CEST 2017
+#Fri Jun 23 22:15:35 CEST 2017
 base.0=/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_89a2e8724ffe1a01695bca2e38866b91ab11d94a
 renamed.1=classes2.dex
 renamed.0=classes.dex

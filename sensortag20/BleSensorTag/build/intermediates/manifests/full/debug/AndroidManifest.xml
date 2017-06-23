@@ -51,30 +51,10 @@
             android:parentActivityName="com.example.ti.ble.sensortag.MainActivity"
             android:screenOrientation="unspecified" />
         <activity
-            android:name="com.example.ti.ble.sensortag.FwUpdateActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:parentActivityName="com.example.ti.ble.sensortag.DeviceActivity"
-            android:screenOrientation="unspecified" />
-        <activity
-            android:name="com.example.ti.ble.sensortag.FwUpdateActivity_CC26xx"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:parentActivityName="com.example.ti.ble.sensortag.DeviceActivity"
-            android:screenOrientation="unspecified" />
-        <activity
-            android:name="com.example.ti.ble.sensortag.FileActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:parentActivityName="com.example.ti.ble.sensortag.FwUpdateActivity"
-            android:screenOrientation="unspecified" />
-        <activity
             android:name="com.example.ti.ble.sensortag.PreferencesActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:label="Preferences"
             android:parentActivityName="com.example.ti.ble.sensortag.DeviceActivity"
-            android:screenOrientation="unspecified" />
-        <activity
-            android:name="com.example.ti.ble.sensortag.fwSelectorView"
-            android:configChanges="orientation|screenSize|keyboardHidden"
-            android:parentActivityName="com.example.ti.ble.sensortag.FwUpdateActivity_CC26xx"
             android:screenOrientation="unspecified" />
     </application>
 

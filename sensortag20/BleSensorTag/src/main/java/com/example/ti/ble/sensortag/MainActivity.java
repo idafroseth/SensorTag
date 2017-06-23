@@ -52,14 +52,8 @@
  **************************************************************************************************/
 package com.example.ti.ble.sensortag;
 
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
@@ -71,10 +65,8 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
-import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
-// import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -85,26 +77,26 @@ import android.widget.Toast;
 import com.example.ti.ble.common.BleDeviceInfo;
 import com.example.ti.ble.common.BluetoothLeService;
 import com.example.ti.ble.common.HCIDefines;
-import com.example.ti.ble.common.HelpView;
 import com.example.ti.util.CustomToast;
+
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+// import android.util.Log;
 
 public class MainActivity extends ViewPagerActivity {
 	// Log
 	// private static final String TAG = "MainActivity";
 
-	// URLs
-	private static final Uri URL_FORUM = Uri
-	    .parse("http://e2e.ti.com/support/low_power_rf/default.aspx?DCMP=hpa_hpa_community&HQS=NotApplicable+OT+lprf-forum");
-	private static final Uri URL_STHOME = Uri
-	    .parse("http://www.ti.com/ww/en/wireless_connectivity/sensortag/index.shtml?INTC=SensorTagGatt&HQS=sensortag");
 
 	// Requests to other activities
 	private static final int REQ_ENABLE_BT = 0;
 	private static final int REQ_DEVICE_ACT = 1;
 
 	// GUI
-	private static MainActivity mThis = null;
-	private ScanView mScanView;
+	private BtScanFragment mScanBtFragment;
 	private Intent mDeviceIntent;
 	private static final int STATUS_DURATION = 5;
 
@@ -165,16 +157,17 @@ public class MainActivity extends ViewPagerActivity {
 
 		// Initialize device list container and device filter
 		mDeviceInfoList = new ArrayList<BleDeviceInfo>();
+
 		Resources res = getResources();
 		mDeviceFilter = res.getStringArray(R.array.device_filter);
 
 		// Create the fragments and add them to the view pager and tabs
-		mScanView = new ScanView();
-		mSectionsPagerAdapter.addSection(mScanView, "BLE Device List");
-		
-		HelpView hw = new HelpView();
-		hw.setParameters("help_scan.html", R.layout.fragment_help, R.id.webpage);
-		mSectionsPagerAdapter.addSection(hw, "Help");
+		mScanBtFragment = new BtScanFragment();
+		mSectionsPagerAdapter.addSection(mScanBtFragment, "BLE Device List");
+
+		//HelpView hw = new HelpView();
+		//hw.setParameters("help_scan.html", R.layout.fragment_help, R.id.webpage);
+		//mSectionsPagerAdapter.addSection(hw, "Help");
 
 		// Register the BroadcastReceiver
 		mFilter = new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED);
@@ -213,18 +206,6 @@ public class MainActivity extends ViewPagerActivity {
 		case R.id.opt_bt:
 			onBluetooth();
 			break;
-		case R.id.opt_e2e:
-			onUrl(URL_FORUM);
-			break;
-		case R.id.opt_sthome:
-			onUrl(URL_STHOME);
-			break;
-		case R.id.opt_license:
-			onLicense();
-			break;
-		case R.id.opt_about:
-			onAbout();
-			break;
 		case R.id.opt_exit:
 			Toast.makeText(this, "Exit...", Toast.LENGTH_SHORT).show();
 			finish();
@@ -244,36 +225,13 @@ public class MainActivity extends ViewPagerActivity {
 		return super.onCreateOptionsMenu(menu);
 	}
 
-	private void onUrl(final Uri uri) {
-		Intent web = new Intent(Intent.ACTION_VIEW, uri);
-		startActivity(web);
-	}
-
 	private void onBluetooth() {
 		Intent settingsIntent = new Intent(
 		    android.provider.Settings.ACTION_BLUETOOTH_SETTINGS);
 		startActivity(settingsIntent);
 	}
 
-	private void onLicense() {
-		final Dialog dialog = new LicenseDialog(this);
-		dialog.show();
-	}
-
-	private void onAbout() {
-		final Dialog dialog = new AboutDialog(this);
-		dialog.show();
-	}
-
 	void onScanViewReady(View view) {
-
-
-		// License popup on first run
-		if (prefs.getBoolean("firstrun", true)) {
-			onLicense();
-			prefs.edit().putBoolean("firstrun", false).commit();
-		}
-
 		if (!mInitialised) {
 			// Broadcast receiver
             mBluetoothLeService = BluetoothLeService.getInstance();
@@ -295,7 +253,7 @@ public class MainActivity extends ViewPagerActivity {
 			}
 			mInitialised = true;
 		} else {
-			mScanView.notifyDataSetChanged();
+			mScanBtFragment.notifyDataSetChanged();
 		}
         // Initial state of widgets
         updateGuiState();
@@ -337,9 +295,9 @@ public class MainActivity extends ViewPagerActivity {
 		if (mBleSupported) {
 			mNumDevs = 0;
 			mDeviceInfoList.clear();
-			mScanView.notifyDataSetChanged();
+			mScanBtFragment.notifyDataSetChanged();
 			scanLeDevice(true);
-			mScanView.updateGui(mScanning);
+			mScanBtFragment.updateGui(mScanning);
 			if (!mScanning) {
 				setError("Device discovery start failed");
 				setBusy(false);
@@ -352,7 +310,7 @@ public class MainActivity extends ViewPagerActivity {
 
 	private void stopScan() {
 		mScanning = false;
-		mScanView.updateGui(false);
+		mScanBtFragment.updateGui(false);
 		scanLeDevice(false);
 	}
 
@@ -374,11 +332,11 @@ public class MainActivity extends ViewPagerActivity {
 		setBusy(true);
 		mBluetoothDevice = mDeviceInfoList.get(pos).getBluetoothDevice();
 		if (mConnIndex == NO_DEVICE) {
-			mScanView.setStatus("Connecting");
+			mScanBtFragment.setStatus("Connecting");
 			mConnIndex = pos;
 			onConnect();
 		} else {
-			mScanView.setStatus("Disconnecting");
+			mScanBtFragment.setStatus("Disconnecting");
 			if (mConnIndex != NO_DEVICE) {
 				mBluetoothLeService.disconnect(mBluetoothDevice.getAddress());
 			}
@@ -417,23 +375,23 @@ public class MainActivity extends ViewPagerActivity {
 				// BLE Host connected
 				if (mConnIndex != NO_DEVICE) {
 					String txt = mBluetoothDevice.getName() + " connected";
-					mScanView.setStatus(txt);
+					mScanBtFragment.setStatus(txt);
 				} else {
-					mScanView.setStatus(mNumDevs + " devices");
+					mScanBtFragment.setStatus(mNumDevs + " devices");
 				}
 			}
 		} else {
 			mDeviceInfoList.clear();
-			mScanView.notifyDataSetChanged();
+			mScanBtFragment.notifyDataSetChanged();
 		}
 	}
 
 	private void setBusy(boolean f) {
-		mScanView.setBusy(f);
+		mScanBtFragment.setBusy(f);
 	}
 
 	void setError(String txt) {
-		mScanView.setError(txt);
+		mScanBtFragment.setError(txt);
 		//CustomToast.middleBottom(this, "Turning BT adapter off and on again may fix Android BLE stack problems");
 	}
 
@@ -462,11 +420,11 @@ public class MainActivity extends ViewPagerActivity {
 	private void addDevice(BleDeviceInfo device) {
 		mNumDevs++;
 		mDeviceInfoList.add(device);
-		mScanView.notifyDataSetChanged();
+		mScanBtFragment.notifyDataSetChanged();
 		if (mNumDevs > 1)
-			mScanView.setStatus(mNumDevs + " devices");
+			mScanBtFragment.setStatus(mNumDevs + " devices");
 		else
-			mScanView.setStatus("1 device");
+			mScanBtFragment.setStatus("1 device");
 	}
 
 	private boolean deviceInfoExists(String address) {
@@ -578,7 +536,7 @@ public class MainActivity extends ViewPagerActivity {
 				stopDeviceActivity();
 				if (status == BluetoothGatt.GATT_SUCCESS) {
 					setBusy(false);
-					mScanView.setStatus(mBluetoothDevice.getName() + " disconnected",
+					mScanBtFragment.setStatus(mBluetoothDevice.getName() + " disconnected",
 					    STATUS_DURATION);
 				} else {
 					setError("Disconnect Status: " + HCIDefines.hciErrorCodeStrings.get(status));
@@ -611,7 +569,7 @@ public class MainActivity extends ViewPagerActivity {
 							// Already in list, update RSSI info
 							BleDeviceInfo deviceInfo = findDeviceInfo(device);
 							deviceInfo.updateRssi(rssi);
-							mScanView.notifyDataSetChanged();
+							mScanBtFragment.notifyDataSetChanged();
 						}
 					}
 				}

@@ -52,8 +52,6 @@
  **************************************************************************************************/
 package com.example.ti.util;
 
-import java.util.ArrayList;
-
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
@@ -63,7 +61,10 @@ import android.graphics.Path;
 import android.graphics.PointF;
 import android.view.View;
 
-@SuppressLint("DrawAllocation") public class SparkLineView extends View {
+import java.util.ArrayList;
+
+@SuppressLint("DrawAllocation")
+public class SparkLineView extends View {
 	private final int numberOfPoints = 15;
 	private final Paint pointStrokePaint;
 	private final Paint pointFillPaint;

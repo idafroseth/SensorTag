@@ -121,20 +121,6 @@ public class SensorTagApplicationClass extends Application{
 
     }
 
-/*
-    @Override
-    public void onClose () {
-        if (mBluetoothLeService != null) {
-            if (mScanning)
-                scanLeDevice(false);
-            unregisterReceiver(mReceiver);
-            unbindService(mServiceConnection);
-            mBluetoothLeService.close();
-            mBluetoothLeService = null;
-        }
-    }
-*/
-
     // Code to manage Service life cycle.
     private final ServiceConnection mServiceConnection = new ServiceConnection() {
 
@@ -195,6 +181,7 @@ public class SensorTagApplicationClass extends Application{
                         //Toast.makeText(context, R.string.app_closing, Toast.LENGTH_LONG)
                         //        .show();
                         //finish();
+                        Toast.makeText(context,"Blutooth off",Toast.LENGTH_SHORT).show();
                         break;
                     default:
                         // Log.w(TAG, "Action STATE CHANGED not processed ");

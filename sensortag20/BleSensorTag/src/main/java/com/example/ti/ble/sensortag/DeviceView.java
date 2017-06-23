@@ -63,7 +63,7 @@ import android.widget.TableRow;
 
 
 	// Fragment for Device View
-	public class DeviceView extends Fragment {
+public class DeviceView extends Fragment {
 
 	public static DeviceView mInstance = null;
 
@@ -97,10 +97,7 @@ import android.widget.TableRow;
 		return view;
 	}
 
-	public void showProgressOverlay(String title) {
-		
-	}
-		
+
 	public void addRowToTable(TableRow row) {
 		if (first) {
 			table.removeAllViews();
@@ -130,7 +127,7 @@ import android.widget.TableRow;
 	void setBusy(boolean f) {
 		if (f != mBusy)
 		{
-			mActivity.showBusyIndicator(f);
+			//mActivity.showBusyIndicator(f);
 			mBusy = f;
 		}
 	}

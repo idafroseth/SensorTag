@@ -12,21 +12,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b47acd7ff16b5b8de915690f07e3c40458313692">
+        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_89a2e8724ffe1a01695bca2e38866b91ab11d94a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
         <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_65c880a4bb8c3947f0dff5905aebf4599fd75583/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="2557d587ecdb22e81e0ef8f23593c2dd8ba54fe7">
-        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_89a2e8724ffe1a01695bca2e38866b91ab11d94a/classes.dex" />
     </item>
     <item
         is-multidex="true"

@@ -4,60 +4,16 @@
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/reedrelayoff_300.png"
     },
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2light.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2light.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/temperature.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/temperature.png"
-    },
-    {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_cancel.png",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/ic_action_cancel.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/accelerometer.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/accelerometer.png"
     },
     {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/reedrelayon_300.png",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/reedrelayon_300.png"
     },
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/humidity.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/humidity.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/cloud_connected_tx.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/cloud_connected_tx.png"
-    },
-    {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_about.png",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/ic_action_about.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/gyroscope.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/gyroscope.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2accelerometer.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2accelerometer.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2ccs.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2ccs.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/rightkey_300.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/rightkey_300.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2cloudservice.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2cloudservice.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/cloud_connected.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/cloud_connected.png"
     },
     {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/rightkeyon_300.png",
@@ -68,28 +24,8 @@
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/leftkeyoff_300.png"
     },
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2temperature.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2temperature.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2magnetometer.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2magnetometer.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2display.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2display.png"
-    },
-    {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_settings.png",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/ic_action_settings.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2gyroscope.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2gyroscope.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2rssi.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2rssi.png"
     },
     {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_bluetooth.png",
@@ -104,30 +40,6 @@
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag.png"
     },
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/leftkey_300.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/leftkey_300.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2irtemperature.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2irtemperature.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/simplekeys.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/simplekeys.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2oad.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2oad.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/barometer.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/barometer.png"
-    },
-    {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/leftkeyon_300.png",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/leftkeyon_300.png"
     },
@@ -136,55 +48,11 @@
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/rightkeyoff_300.png"
     },
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/colorpicker.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/colorpicker.png"
-    },
-    {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/ic_action_refresh.png",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/ic_action_refresh.png"
     },
     {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/deviceinfo.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/deviceinfo.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/irtemperature.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/irtemperature.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/magnetometer.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/magnetometer.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2lightsensor.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2lightsensor.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2motion.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2motion.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2humidity.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2humidity.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2barometer.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2barometer.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/cloud_disconnected.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/cloud_disconnected.png"
-    },
-    {
         "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/tible.png",
         "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/tible.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2simplekeys.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2simplekeys.png"
-    },
-    {
-        "merged": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/res/merged/debug/drawable-hdpi/sensortag2deviceinfo.png",
-        "source": "/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/res/drawable-hdpi/sensortag2deviceinfo.png"
     }
 ]
