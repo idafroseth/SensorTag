@@ -104,6 +104,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="org.eclipse.paho.client.mqttv3-1.0.2" level="project" />
     <orderEntry type="library" exported="" name="support-v4-19.1.0" level="project" />
+    <orderEntry type="library" exported="" name="gson-2.8.0" level="project" />
     <orderEntry type="library" exported="" name="org.eclipse.paho.android.service-1.0.2" level="project" />
   </component>
 </module>

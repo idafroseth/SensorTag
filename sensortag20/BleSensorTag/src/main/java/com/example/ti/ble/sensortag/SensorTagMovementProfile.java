@@ -52,11 +52,6 @@
  **************************************************************************************************/
 package com.example.ti.ble.sensortag;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
-
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
@@ -69,10 +64,44 @@ import com.example.ti.ble.common.BluetoothLeService;
 import com.example.ti.ble.common.GattInfo;
 import com.example.ti.ble.common.GenericBluetoothProfile;
 import com.example.ti.util.Point3D;
+import com.google.gson.Gson;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
+
+import blog.appitude.fusion.SensorFusionHelper;
+import blog.appitude.util.UdpClient;
 
 public class SensorTagMovementProfile extends GenericBluetoothProfile {
 
 	private static final String TAG = "MotionSensor";
+
+
+    private final SensorFusionHelper sensorFusion = new SensorFusionHelper() {
+        @Override
+        public void onOrientationChanged(float[] orientation) {
+
+        }
+      /*  @Override
+        public void onOrientationChanged(final float[] orientation) {
+            //final Object3D model = getModel();
+           // if (model == null)
+            //    return;
+
+            final double[] patchedOrientation = sensorManager.patchSensorFusion(orientation);
+            model.setRotation(patchedOrientation[0], patchedOrientation[1], patchedOrientation[2]);
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    viewFused.setText(String.format("%+.6f\n%+.6f\n%+.6f",
+                            orientation[0], orientation[1], orientation[2]));
+                }
+            });
+        }*/
+    };
+
 
 	public SensorTagMovementProfile(Context con, BluetoothDevice device, BluetoothGattService service, BluetoothLeService controller) {
 		super(con,device,service,controller);
@@ -118,6 +147,7 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
                 }
             }
         });
+
 		this.tRow.periodBar.setProgress(100);
 	}
 	
@@ -145,6 +175,7 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
 
 		this.periodWasUpdated(1000);
         this.isEnabled = true;
+        sensorFusion.start();
 	}
 	@Override 
 	public void disableService() {
@@ -159,6 +190,7 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
             Log.d("SensorTagMovementProfile","Sensor notification disable failed: " + this.configC.getUuid().toString() + " Error: " + error);
         }
         this.isEnabled = false;
+        //sensorFusion.stop();
 	}
 	public void didWriteValueForCharacteristic(BluetoothGattCharacteristic c) {
 		
@@ -174,16 +206,21 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
 				Point3D v;
 				v = Sensor.MOVEMENT_ACC.convert(value);
 				if (this.tRow.config == false) this.tRow.value.setText(Html.fromHtml(String.format("<font color=#FF0000>X:%.2fG</font>, <font color=#00967D>Y:%.2fG</font>, <font color=#00000>Z:%.2fG</font>", v.x, v.y, v.z)));
-				this.tRow.sl1.addValue((float)v.x);
+                this.tRow.sl1.addValue((float)v.x);
 				this.tRow.sl2.addValue((float)v.y);
 				this.tRow.sl3.addValue((float)v.z);
-				v = Sensor.MOVEMENT_GYRO.convert(value);
+
+                sensorFusion.onAccDataUpdate(new float[]{(float)v.x,(float)v.y,(float)v.z});
+
+                v = Sensor.MOVEMENT_GYRO.convert(value);
+                sensorFusion.onGyroDataUpdate(new float[]{(float)v.x,(float)v.y,(float)v.z});
 				SensorTagMovementTableRow row = (SensorTagMovementTableRow)this.tRow;
 				row.gyroValue.setText(Html.fromHtml(String.format("<font color=#FF0000>X:%.2f°/s</font>, <font color=#00967D>Y:%.2f°/s</font>, <font color=#00000>Z:%.2f°/s</font>", v.x, v.y, v.z)));
 				row.sl4.addValue((float)v.x);
 				row.sl5.addValue((float)v.y);
 				row.sl6.addValue((float)v.z);
 				v = Sensor.MOVEMENT_MAG.convert(value);
+                sensorFusion.onMagDataUpdate(new float[]{(float)v.x,(float)v.y,(float)v.z});
 				row.magValue.setText(Html.fromHtml(String.format("<font color=#FF0000>X:%.2fuT</font>, <font color=#00967D>Y:%.2fuT</font>, <font color=#00000>Z:%.2fuT</font>", v.x, v.y, v.z)));
 				row.sl7.addValue((float)v.x);
 				row.sl8.addValue((float)v.y);
@@ -207,4 +244,5 @@ public class SensorTagMovementProfile extends GenericBluetoothProfile {
         map.put("compass_z",String.format("%.2f",v.z));
         return map;
     }
+
 }

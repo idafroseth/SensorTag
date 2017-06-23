@@ -12,15 +12,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.0"
-        sha1="b47acd7ff16b5b8de915690f07e3c40458313692">
-        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_89a2e8724ffe1a01695bca2e38866b91ab11d94a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -30,12 +21,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b47acd7ff16b5b8de915690f07e3c40458313692">
+        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_89a2e8724ffe1a01695bca2e38866b91ab11d94a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/libs/org.eclipse.paho.android.service-1.0.2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
         sha1="3b8420e57139cc627a55be0c17b6687e92d7460f">
         <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/2/org.eclipse.paho.android.service-1.0.2_952e246b9a86fcfeecaf97bf5e9284391e1ebc3f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Zelus/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="/Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.0_8dba961a991e9949ed2ea8aa3a5a43cf22164c39/classes.dex" />
     </item>
     <item
         is-multidex="true"

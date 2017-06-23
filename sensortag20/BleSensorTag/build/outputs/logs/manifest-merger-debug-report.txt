@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:2:1-60:12
+ADDED from /Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from /Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:3:5-43
 		INJECTED from /Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/AndroidManifest.xml
@@ -56,7 +56,7 @@ ADDED from /Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorT
 	android:name
 		ADDED from /Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:20:9-53
 application
-ADDED from /Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:23:5-57:19
+ADDED from /Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:23:5-56:19
 	android:label
 		ADDED from /Users/Zelus/Documents/workspace/TiSensorTag20/sensortag20/BleSensorTag/src/main/AndroidManifest.xml:26:9-41
 	android:allowBackup
